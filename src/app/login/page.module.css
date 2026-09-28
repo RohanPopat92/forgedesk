@@ -1,0 +1,76 @@
+.body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 48px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+}
+
+.form {
+  width: 360px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.a {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field {
+  width: 100%;
+  height: 44px;
+  padding: 12px;
+  box-sizing: border-box;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+}
+
+.mem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+}
+
+#btn {
+  width: 100%;
+  padding: 8px;
+
+  color: black;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.user{
+  display:flex;
+  flex-direction: column;
+  gap:6px;
+}
+
+.idk{
+    display: flex;
+}
