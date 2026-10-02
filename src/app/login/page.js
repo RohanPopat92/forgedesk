@@ -57,19 +57,9 @@ export default function Login(){
     })  
     
         const result = (await response).json;
-        
-
-                // if((await response).ok){
-
-                //     route.push('/login');
-                // }
-                // else{
-                //     console.log("4");
-                //     setRegErr("User already exists");
-                    
-                // }        
+               
         if((await response).ok){
-            route.push("/dashboard");
+            route.push("/workspace");
         }
 
         else{
@@ -107,7 +97,7 @@ export default function Login(){
 
         <div className={styles.a}>
             <label/>Password
-            <input type="password" placeholder="••••••••••" name="password" className={styles.field} onChange={(e)=> {console.log("INPUT VALUE:", e.target.value);setPassword(e.target.value); setPasswordErr(validatePassword(e.target.value))}}></input>
+            <input type="password" placeholder="••••••••••" name="password" className={styles.field} onChange={(e)=> {setPassword(e.target.value); setPasswordErr(validatePassword(e.target.value))}}></input>
             {passwordErr && <p style={{ color: "red", fontSize: "13px" }}>{passwordErr}</p> }             
         </div>
          

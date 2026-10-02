@@ -4,7 +4,7 @@ import styles from "./page.module.css"
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import fetchWrapper from "../lib/fetchWrapper"
+import fetchWrapper from "../lib/fetchWrapper";
 export default function Dashboard(){
     const route = useRouter();
 

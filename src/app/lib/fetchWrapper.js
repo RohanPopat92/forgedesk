@@ -9,12 +9,10 @@ export default async function fetchWrapper(url,options={}){
             credentials:"include",
             ...options
         }
+
         let response = await fetch(url,fetchConfig);
 
-        console.log("Hello");
 
-        
-        console.log(response.status);
         if(response.status==401){
         const refresh = await fetch("http://localhost:3000/api/refresh",{
                 method:"POST"
